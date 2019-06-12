@@ -1,0 +1,167 @@
+.chinfor {
+	display:flex;
+	flex-direction: row;
+	
+	.lefter {
+		width: 200px;
+		display: flex;
+		justify-content: center;
+
+		.avater {
+			width: 170px;
+			height: 170px;
+			position: relative;
+			
+			img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			.cover {
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.2);
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			input {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				opacity: 0;
+			}
+		}
+	}
+
+	.righter {
+		width: calc(100% - 200px);
+		height: auto;
+
+		h1 {
+			width: 95%;
+			height: 60px;
+			line-height: 60px;
+			margin: 0 auto;
+			position: relative;
+			
+			.tochan {
+					position: absolute;
+					font-size: 13px;
+					top: 0;
+					right: 300px;
+				}
+
+			a:hover {
+				color: #0077e6;
+			}
+		}
+		
+		.username {
+			width: 95%;
+			height: 60px;
+			line-height: 60px;
+			margin: 0 auto;
+				
+				input {
+					width: 300px;
+					height: 45px;
+					padding: 0 10px;
+					font-size: 20px;
+					outline: none;
+					margin-right: 40px;
+				}
+
+				button {
+					width: 65px;
+					height: 35px;
+					color: white;
+					background: #0077e6;
+					outline: none;
+					border: none;
+					margin-right: 10px;
+					border-radius: 5px;
+				}
+
+				.cancel {
+					background: gray;
+				}
+		}
+
+		.item {
+			width: 95%;
+			height: 120px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			border-bottom: 1px solid lightgray;
+			line-height: 120px;
+			
+			.item_intro {
+				width: 100px;
+				height: 100%;
+				font-weight: bold;
+
+			}
+
+			.item_detail {
+				width: calc(100% - 100px);
+				position: relative;
+				
+				.tochan {
+					position: absolute;
+					font-size: 13px;
+					top: 0;
+					right: 300px;
+				}
+
+				a:hover {
+					color: #0077e6;
+				}
+
+				input {
+					width: 230px;
+					height: 35px;
+					padding: 0 5px;
+					font-size: 17px;
+					outline: none;
+					margin-right: 20px;
+				}
+
+				button {
+					width: 65px;
+					height: 35px;
+					color: white;
+					background: #0077e6;
+					outline: none;
+					border: none;
+					margin-right: 10px;
+					border-radius: 5px;
+				}
+
+				.cancel {
+					background: gray;
+				}
+			}
+
+			.sex {
+				input {
+					width: auto;
+					height: 15px;
+					margin-right: 10px;
+				}
+
+				label {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
